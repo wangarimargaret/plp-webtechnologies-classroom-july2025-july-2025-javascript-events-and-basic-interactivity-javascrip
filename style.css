@@ -1,0 +1,73 @@
+/* 🌞 Default light mode styles */
+body {
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌚 Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+/* ✨ Fade-in animation for page load */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* 🖱 Button styles with hover animation */
+button {
+  padding: 8px 16px;
+  margin: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #45a049;
+}
+
+/* ❓ FAQ answer animation */
+.faq-item .answer {
+  display: none;
+  margin-left: 10px;
+  color: #555;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.faq-item.active .answer {
+  display: block;
+  opacity: 1;
+}
+
+/* ✅ Form feedback animation */
+#form-feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+#form-feedback.visible {
+  opacity: 1;
+}
+#user-form{
+    margin: auto;
+    background: pink;
+    width: 50%;
+    padding: 20px;
+    border : 2px solid purple;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
